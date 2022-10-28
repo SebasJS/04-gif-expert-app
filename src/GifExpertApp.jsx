@@ -1,8 +1,16 @@
 import { useState } from "react";
+import { AddCategory } from "./components/AddCategory";
+
 
 export const GifExpertApp = () => {
 
   const [ categories, setCategories ] = useState([ 'One Puch', 'Dragon Ball']);
+
+  const onAddCategory = () => {
+    /*No se recomienda el uso del push, es mejor utilizar el operador ... */
+    setCategories([...categories, 'Avengers']);
+
+  }
 
   console.log( categories );
   return (
@@ -12,6 +20,7 @@ export const GifExpertApp = () => {
         <h1> GifExpertApp</h1>
 
       {/* Input */}
+        < AddCategory />
 
       {/* Listado de Items */}
         {/* Item */}
