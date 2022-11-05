@@ -4,12 +4,11 @@ import { AddCategory } from "./components/AddCategory";
 
 export const GifExpertApp = () => {
 
-  const [ categories, setCategories ] = useState([ 'One Puch', 'Dragon Ball']);
+  const [ categories, setCategories ] = useState([ 'One Puch', 'Dragon Ball', 'Avengers']);
 
   const onAddCategory = () => {
     /*No se recomienda el uso del push, es mejor utilizar el operador ... */
     setCategories([...categories, 'Avengers']);
-
   }
 
   console.log( categories );
