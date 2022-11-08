@@ -15,8 +15,6 @@ export const AddCategory = ({ onNewCategory }) => {
 
         onNewCategory( inputValue.trim() );
 
-
-        // setCategories( ( categories ) => [inputValue, ...categories]);
         setInputValue('');
     }
 
@@ -26,7 +24,6 @@ export const AddCategory = ({ onNewCategory }) => {
                 type="text" 
                 placeholder="Buscar gifs"
                 value={ inputValue }
-                /*onChange={ (event) => onInputChange(event) }*/
                 onChange={ onInputChange }
             />
         </form>
