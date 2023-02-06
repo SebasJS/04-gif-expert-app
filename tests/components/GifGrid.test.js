@@ -42,7 +42,7 @@ describe('Pruebas en el componente GifGrid', () => {
         });
 
         render( < GifGrid category = { category } />);
-        screen.debug();
+        //screen.debug();
 
         expect( screen.getAllByRole( 'img' ).length ).toBe(2)
 
